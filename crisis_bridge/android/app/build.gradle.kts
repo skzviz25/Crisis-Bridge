@@ -55,6 +55,8 @@ android {
         release {
             // Keep debug signing for now; replace with keystore for production
             signingConfig = signingConfigs.getByName("debug")
+            isShrinkResources = false // Temporarily set to false to test
+            isMinifyEnabled = false   // Temporarily set to false to test
         }
     }
 }
