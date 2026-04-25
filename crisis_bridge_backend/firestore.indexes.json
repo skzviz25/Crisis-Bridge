@@ -1,0 +1,30 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "sos_reports",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "propertyId", "order": "ASCENDING" },
+        { "fieldPath": "status",     "order": "ASCENDING" },
+        { "fieldPath": "createdAt",  "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "floor_maps",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "propertyId", "order": "ASCENDING" },
+        { "fieldPath": "floor",      "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "danger_states",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "mapId",  "order": "ASCENDING" },
+        { "fieldPath": "active", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

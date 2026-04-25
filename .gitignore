@@ -1,0 +1,32 @@
+# ── Flutter ──────────────────────────────────────────
+crisis_bridge/.dart_tool/
+crisis_bridge/.flutter-plugins
+crisis_bridge/.flutter-plugins-dependencies
+crisis_bridge/.packages
+crisis_bridge/build/
+crisis_bridge/.idea/
+crisis_bridge/*.iml
+crisis_bridge/android/.gradle/
+crisis_bridge/android/local.properties
+crisis_bridge/android/key.properties
+crisis_bridge/android/app/google-services.json
+crisis_bridge/ios/Pods/
+crisis_bridge/ios/.symlinks/
+crisis_bridge/ios/Flutter/Flutter.framework
+crisis_bridge/ios/Flutter/Flutter.podspec
+crisis_bridge/ios/Runner.xcworkspace/xcuserdata/
+crisis_bridge/lib/firebase_options.dart
+
+# ── Backend ──────────────────────────────────────────
+crisis_bridge_backend/node_modules/
+crisis_bridge_backend/lib/
+crisis_bridge_backend/.env
+crisis_bridge_backend/firebase-debug.log
+crisis_bridge_backend/.firebase/
+
+# ── General ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
