@@ -36,7 +36,7 @@ android {
         applicationId = "com.pr.crisis_bridge"  // ← keep yours
         // ✅ FIX: Kotlin DSL uses = assignment, no parentheses
         minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        targetSdk = 34
         versionCode = flutterVersionCode.toInt()
         versionName = flutterVersionName
         multiDexEnabled = true

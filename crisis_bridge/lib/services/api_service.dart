@@ -1,5 +1,4 @@
-// ✅ FIX: _baseUrl is now referenced in methods (no unused_field warning)
-// TODOs are kept as documentation — not errors, just info annotations
+
 
 class ApiService {
   // ✅ used via _endpoint() helper below
