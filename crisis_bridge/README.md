@@ -1,5 +1,7 @@
 # SafExit – Complete Flutter App Documentation
 
+made for the safety
+
 ---
 
 ## 1. Architecture Overview
