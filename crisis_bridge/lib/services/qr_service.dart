@@ -1,23 +1,28 @@
+// lib/services/qr_service.dart
 import 'dart:typed_data';
 import 'package:flutter_zxing/flutter_zxing.dart';
-
+ 
 class QrService {
-  /// Encode [content] to a QR PNG and return raw bytes.
+  /// Encode [content] into a QR code PNG and return raw bytes.
   /// Returns null if encoding fails.
-  // ✅ FIX: encodeBarcode is NOT async — remove await, call synchronously
   Future<Uint8List?> encodeQr(String content) async {
     try {
-      // ✅ No 'await' — zx.encodeBarcode returns Encode directly, not Future
+      // flutter_zxing encodeBarcode is synchronous — no await needed
       final Encode result = zx.encodeBarcode(
         contents: content,
         params: EncodeParams(
           format: Format.qrCode,
-          width: 400,
-          height: 400,
-          margin: 10,
+          width: 512,
+          height: 512,
+          margin: 16,
         ),
       );
-      return result.data; // Uint8List? PNG bytes
+ 
+      // result.data is Uint8List? containing raw PNG bytes
+      if (result.isValid && result.data != null && result.data!.isNotEmpty) {
+        return result.data;
+      }
+      return null;
     } catch (e) {
       return null;
     }

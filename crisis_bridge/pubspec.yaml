@@ -2,41 +2,45 @@ name: crisis_bridge
 description: Hospitality emergency coordination app.
 publish_to: 'none'
 version: 1.0.0+1
-
+ 
 environment:
   sdk: '>=3.0.0 <4.0.0'
-
+ 
 dependencies:
   flutter:
     sdk: flutter
-
+ 
   # Firebase
   firebase_core: ^3.3.0
   firebase_auth: ^5.1.4
   cloud_firestore: ^5.2.1
-  firebase_messaging: ^15.0.0
-
+ 
   # State
   provider: ^6.1.2
-
+ 
   # Navigation
   go_router: ^14.2.7
-
+ 
   # Location
   geolocator: ^12.0.0
-
+ 
   # QR
   flutter_zxing: ^1.5.0
-
+  qr_flutter: ^4.1.0 
+ 
+  # Image picker (for floor plan mode)
+  image_picker: ^1.1.2
+ 
   # UI helpers
   uuid: ^4.4.2
   intl: ^0.19.0
   collection: ^1.18.0
-
+ 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-
+ 
 flutter:
   uses-material-design: true
+ 

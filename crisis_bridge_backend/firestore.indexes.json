@@ -1,29 +1,65 @@
 {
   "indexes": [
     {
-      "collectionGroup": "sos_reports",
+      "collectionGroup": "danger_states",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "propertyId", "order": "ASCENDING" },
-        { "fieldPath": "status",     "order": "ASCENDING" },
-        { "fieldPath": "createdAt",  "order": "DESCENDING" }
-      ]
+        {
+          "fieldPath": "mapId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "active",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "ASCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
     },
     {
       "collectionGroup": "floor_maps",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "propertyId", "order": "ASCENDING" },
-        { "fieldPath": "floor",      "order": "ASCENDING" }
-      ]
+        {
+          "fieldPath": "propertyId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "floor",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "ASCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
     },
     {
-      "collectionGroup": "danger_states",
+      "collectionGroup": "sos_reports",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "mapId",  "order": "ASCENDING" },
-        { "fieldPath": "active", "order": "ASCENDING" }
-      ]
+        {
+          "fieldPath": "propertyId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createdAt",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "DESCENDING"
+        }
+      ],
+      "density": "SPARSE_ALL"
     }
   ],
   "fieldOverrides": []

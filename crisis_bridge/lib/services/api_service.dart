@@ -1,7 +1,7 @@
 
 
 class ApiService {
-  // ✅ used via _endpoint() helper below
+  
   static const String _baseUrl = 'https://your-backend.example.com/api/v1';
 
   String _endpoint(String path) => '$_baseUrl$path';

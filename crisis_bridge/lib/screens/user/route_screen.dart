@@ -6,7 +6,6 @@ import 'package:crisis_bridge/widgets/sos_button.dart';
 import 'package:crisis_bridge/widgets/nav_status_panel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-// ✅ FIX: sos_provider import removed (unused)
 
 class RouteScreen extends StatefulWidget {
   final String mapId;

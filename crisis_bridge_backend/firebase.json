@@ -1,9 +1,25 @@
 {
-  "functions": {
-    "source": "backend",
-    "runtime": "nodejs20"
-  },
+  "functions": [
+    {
+      "codebase": "default",
+      "source": "backend",
+      "runtime": "nodejs20",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix functions run lint",
+        "npm --prefix functions run build"
+      ]
+    }
+  ],
   "firestore": {
+    "database": "(default)",
+    "location": "nam5",
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
   }
